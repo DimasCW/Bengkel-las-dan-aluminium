@@ -50,7 +50,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Jasa Bengkel Las & Aluminium Profesional</h1>
-                <p>Melayani perakitan Pagar, Kanopi, Railing, Rolling Door, Kusen Aluminium, dan konstruksi besi lainnya dengan hasil yang rapi dan tahan lama.</p>
+                <p>Melayani fabrikasi Pagar, Kanopi, Railing, Rolling Door, Kusen Aluminium, dan konstruksi besi lainnya dengan hasil yang rapi dan tahan lama.</p>
                 <div class="hero-btns">
                     <a href="https://wa.me/6281333545435?text=Halo%2C%20saya%20tertarik%20dengan%20jasa%20bengkel%20las%20dan%20aluminium" class="btn btn-primary">
                         Hubungi WhatsApp Sekarang
@@ -138,75 +138,164 @@
                 <h2>Hasil Pengerjaan</h2>
                 <p>Koleksi proyek Las & Aluminium yang telah kami kerjakan dengan teliti</p>
             </div>
-            <div class="gallery-grid">
-                <!-- Video Item (Strategic Position) -->
-                <div class="gallery-item video-item">
+
+            <!-- Gallery Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="foto">Foto Proyek</button>
+                <button class="filter-btn" data-filter="video">Video Proyek</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Video Item -->
+                <div class="gallery-item video-item" data-category="video">
                     <video autoplay muted loop playsinline src="assets/gallery-video.mp4" poster="assets/hero.png"></video>
-                    <div class="gallery-overlay">Proses Pengerjaan (Video)</div>
+                    <div class="gallery-overlay"><i data-lucide="play"></i></div>
                 </div>
 
                 <!-- Photos -->
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-1.jpg" alt="Hasil Kerja AK 1">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-2.jpg" alt="Hasil Kerja AK 2">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-3.jpg" alt="Hasil Kerja AK 3">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-4.jpg" alt="Hasil Kerja AK 4">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-5.jpg" alt="Hasil Kerja AK 5">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-6.jpg" alt="Hasil Kerja AK 6">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-7.jpg" alt="Hasil Kerja AK 7">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-8.jpg" alt="Hasil Kerja AK 8">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-9.jpg" alt="Hasil Kerja AK 9">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-10.jpg" alt="Hasil Kerja AK 10">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-11.jpg" alt="Hasil Kerja AK 11">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-12.jpg" alt="Hasil Kerja AK 12">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-13.jpg" alt="Hasil Kerja AK 13">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-14.jpg" alt="Hasil Kerja AK 14">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="foto">
                     <img src="assets/gallery-15.jpg" alt="Hasil Kerja AK 15">
-                    <div class="gallery-overlay">Pengerjaan Bengkel AK</div>
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
                 </div>
-                
+
+                <!-- Additional Videos & Photos -->
+                <div class="gallery-item video-item" data-category="video">
+                    <video autoplay muted loop playsinline src="assets/gallery-video-2.mp4" poster="assets/hero.png"></video>
+                    <div class="gallery-overlay"><i data-lucide="play"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-16.jpg" alt="Hasil Kerja AK 16">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-17.jpg" alt="Hasil Kerja AK 17">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-18.jpg" alt="Hasil Kerja AK 18">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item video-item" data-category="video">
+                    <video autoplay muted loop playsinline src="assets/gallery-video-3.mp4" poster="assets/hero.png"></video>
+                    <div class="gallery-overlay"><i data-lucide="play"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-19.jpg" alt="Hasil Kerja AK 19">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-20.jpg" alt="Hasil Kerja AK 20">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-21.jpg" alt="Hasil Kerja AK 21">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item video-item" data-category="video">
+                    <video autoplay muted loop playsinline src="assets/gallery-video-4.mp4" poster="assets/hero.png"></video>
+                    <div class="gallery-overlay"><i data-lucide="play"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-22.jpg" alt="Hasil Kerja AK 22">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-23.jpg" alt="Hasil Kerja AK 23">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-24.jpg" alt="Hasil Kerja AK 24">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item video-item" data-category="video">
+                    <video autoplay muted loop playsinline src="assets/gallery-video-5.mp4" poster="assets/hero.png"></video>
+                    <div class="gallery-overlay"><i data-lucide="play"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-25.jpg" alt="Hasil Kerja AK 25">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-26.jpg" alt="Hasil Kerja AK 26">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-27.jpg" alt="Hasil Kerja AK 27">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-28.jpg" alt="Hasil Kerja AK 28">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-29.jpg" alt="Hasil Kerja AK 29">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+                <div class="gallery-item" data-category="foto">
+                    <img src="assets/gallery-30.jpg" alt="Hasil Kerja AK 30">
+                    <div class="gallery-overlay"><i data-lucide="search"></i></div>
+                </div>
+            </div>
+
+            <div class="load-more-container" id="loadMoreContainer">
+                <button class="btn-load-more" id="btnLoadMore">Lihat Lebih Banyak</button>
             </div>
         </div>
     </section>
@@ -300,7 +389,7 @@
                     <div class="service-card" style="height: 100%; display: flex; align-items: center; justify-content: center; background: #0F2E23;">
                         <div style="text-align: center;">
                             <i data-lucide="navigation" style="font-size: 3rem; margin-bottom: 20px;"></i>
-                            <p>Siap melayani area Sidoarjo, Surabaya, dan sekitarnya.</p>
+                            <p>Siap melayani area Jawa Timur dan Bali.</p>
                         </div>
                     </div>
                 </div>
@@ -368,6 +457,69 @@
                 lucide.createIcons();
             });
         });
+
+        // Gallery Filter & Load More Logic
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const btnLoadMore = document.getElementById('btnLoadMore');
+        const loadMoreContainer = document.getElementById('loadMoreContainer');
+        
+        let currentFilter = 'all';
+        let itemsVisible = 12; // Adjusted for a neater initial look
+        const itemsPerLoad = 8;
+
+        function updateGallery() {
+            let visibleCount = 0;
+            let hiddenCount = 0;
+
+            galleryItems.forEach(item => {
+                const category = item.dataset.category;
+                const isMatch = currentFilter === 'all' || category === currentFilter;
+                
+                if (isMatch) {
+                    if (visibleCount < itemsVisible) {
+                        item.classList.remove('hidden');
+                        visibleCount++;
+                    } else {
+                        item.classList.add('hidden');
+                        hiddenCount++;
+                    }
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            // Show/Hide Load More Button
+            if (hiddenCount > 0) {
+                loadMoreContainer.style.display = 'block';
+            } else {
+                loadMoreContainer.style.display = 'none';
+            }
+            
+            // Refresh icons in case any were hidden
+            lucide.createIcons();
+        }
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active state
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Reset visibility and filter
+                currentFilter = btn.dataset.filter;
+                itemsVisible = 12;
+                updateGallery();
+            });
+        });
+
+        btnLoadMore.addEventListener('click', () => {
+            itemsVisible += itemsPerLoad;
+            updateGallery();
+        });
+
+        // Initial Load
+        updateGallery();
     </script>
 </body>
 </html>

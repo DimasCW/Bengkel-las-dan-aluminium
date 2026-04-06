@@ -260,20 +260,81 @@ nav .container {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
+    grid-auto-flow: dense;
+    gap: 24px;
+}
+
+/* Gallery Filters */
+.gallery-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    background: var(--secondary-black);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-light);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.filter-btn.active {
+    background: var(--accent-green);
+    color: var(--primary-black);
+    border-color: var(--accent-green);
+}
+
+.filter-btn:hover:not(.active) {
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+}
+
+.gallery-item.hidden {
+    display: none;
+}
+
+.load-more-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-load-more {
+    background: transparent;
+    border: 2px solid var(--accent-green);
+    color: var(--accent-green);
+    padding: 12px 40px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.btn-load-more:hover {
+    background: var(--accent-green);
+    color: var(--primary-black);
 }
 
 .gallery-item {
     position: relative;
-    aspect-ratio: 1; /* Square by default */
+    aspect-ratio: 1 / 1;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 12px;
     background: #1a1a1a;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.05);
 }
 
 .gallery-item.video-item {
-    aspect-ratio: 16/9;
+    aspect-ratio: 1 / 1;
 }
 
 @media (min-width: 992px) {
@@ -298,25 +359,35 @@ nav .container {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(15, 46, 35, 0.9), transparent);
+    background: rgba(15, 46, 35, 0.4);
+    backdrop-filter: blur(4px);
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     padding: 20px;
     justify-content: center;
     opacity: 0;
     transition: var(--transition);
-    font-weight: 700;
-    text-align: center;
     pointer-events: none;
+}
+
+.gallery-overlay i {
+    font-size: 2.5rem;
+    color: var(--white);
+    transform: scale(0.5);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-item:hover img,
 .gallery-item:hover video {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .gallery-item:hover .gallery-overlay {
     opacity: 1;
+}
+
+.gallery-item:hover .gallery-overlay i {
+    transform: scale(1);
 }
 
 /* Advantages Section */
